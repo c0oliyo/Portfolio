@@ -1,0 +1,303 @@
+:root {
+  --bg: #000;
+  --text: #fff;
+  --muted: #999;
+  --line: #333;
+}
+
+body.light {
+  --bg: #fff;
+  --text: #000;
+  --muted: #555;
+  --line: #ccc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Orbitron', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+section {
+  padding: 90px 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+/* NAVIGATION STLYES */
+.navbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  z-index: 10;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  box-shadow: inset -5px -3px 5px var(--muted);
+  cursor: pointer;
+}
+
+.navbar nav a {
+  margin-left: 30px;
+  font-size: 15px;
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+/* HOMEPAGE STYLES */
+.hero {
+  max-width: 1100px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding-top: 170px;
+}
+
+.course {
+  display: inline-block;
+  padding: 6px 16px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: 44px;
+  font-weight: 800;
+  margin: 20px 0 15px;
+}
+
+.hero p {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.buttons {
+  margin-top: 90px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  margin-right: 20px;
+  font-size: 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.btn:hover {
+  border-color: var(--bg);
+  background: var(--text);
+  color: var(--bg);
+}
+
+.btn.white {
+  background: var(--text);
+  color: var(--bg);
+}
+
+.btn.white:hover {
+  background: var(--bg);
+  color: var(--text);
+  border-color: var(--line);
+}
+
+/* ABOUT STYLES */
+.about {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 40px;
+  border: 1px solid var(--line);
+  border-radius: 40px;
+}
+
+.about h2 {
+  width: 240px;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.aboutContent {
+  display: flex;
+  gap: 30px;
+}
+
+.aboutContent img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.text {
+  font-size: 13px;
+  line-height: 1.9;
+  color: var(--muted);
+}
+
+.text p {
+  margin-bottom: 18px;
+}
+
+.skills {
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.skills span {
+  font-size: 26px;
+}
+
+.skills p {
+  margin-top: 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/* PROJECTS STYLES */
+.project {
+  width: 330px;
+  margin: 0 auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.projectImg {
+  height: 150px;
+  border-bottom: 1px solid var(--line);
+}
+
+.projectFooter {
+  padding: 25px;
+  text-align: center;
+}
+
+.click {
+  display: block;
+  padding: 6px 0;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/* SKILLS STYLES */
+.skillGrid {
+  display: flex;
+  justify-content: center;
+  gap: 110px;
+}
+
+.skillCard {
+  width: 235px;
+  height: 430px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+}
+
+.skillCard h3 {
+  padding: 25px 20px 20px;
+  font-size: 17px;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--line);
+}
+
+.skillLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.percentage {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.percentage small {
+  font-size: 8px;
+}
+
+/* CONTCAT STYLES */
+.contactList {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.contactLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 30px 20px 8px;
+  border-bottom: 1px solid var(--line);
+  font-size: 13px;
+}
+
+.contactLine small {
+  color: var(--muted);
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+h3.text {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+footer {
+  padding: 60px 20px 30px;
+  text-align: center;
+  font-size: 11px;
+  color: var(--muted);
+}
